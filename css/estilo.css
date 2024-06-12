@@ -1,0 +1,56 @@
+h1 {
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bold;
+}
+
+p {
+    text-align: center;
+    font-size: larger;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.form-label {
+    font-weight: bold;
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+::placeholder {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.bg-image {
+    background-color: #021d3bf3;
+}
+
+.container {
+    border-radius: 5px;
+    background-color: rgb(253, 253, 253);
+    box-shadow: 0px 0px 40px;
+}
+
+.btn-primary {
+    background-color: #032a57 !important;;
+    border-color: black;
+    border-radius: 5px;
+    padding-right: 25px;
+    padding-left: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.btn-primary:hover {
+    background-color: #032a57da !important;;
+}
+
+.btn-primary:active {
+    background-color: #032a57a9 !important; 
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none;
+    appearance: none; 
+}
+
