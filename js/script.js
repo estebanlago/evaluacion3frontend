@@ -18,6 +18,7 @@ function validar_nombre() {
     var div_error_nombre = document.getElementById("error-nombre");
     var nombre = input_nombre.value;
     var primerCar = nombre.charAt(0);
+    var ultimo_caracter_nombre = nombre.slice(-1);
     console.log(nombre);
     
     if (nombre.trim() == "") {
@@ -42,6 +43,11 @@ function validar_nombre() {
         return false;
     }  else if (isNaN(primerCar) == false) {
         div_error_nombre.innerHTML = "El nombre de usuario no debe empezar con números.";
+        div_error_nombre.className = "text-danger small mt-1";
+        input_nombre.classList.add("is-invalid");
+        return false;
+    }  else if (comprobar_contencion_enteros(nombre) == true && isNaN(ultimo_caracter_nombre) == true) {
+        div_error_nombre.innerHTML = "El nombre de usuario solo debe llevar números al final.";
         div_error_nombre.className = "text-danger small mt-1";
         input_nombre.classList.add("is-invalid");
         return false;
